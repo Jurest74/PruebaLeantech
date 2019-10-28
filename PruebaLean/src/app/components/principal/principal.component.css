@@ -1,0 +1,137 @@
+/*General changes*/
+*{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+  /*background-color: #E4E4E4;*/
+}
+
+/*Ajuste placeholder */
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;
+}
+
+:-ms-input-placeholder {
+   text-align: center;
+}
+
+/*menu*/
+
+.menu{
+	background: white;
+	width: 91.06%;
+  height: 57px;
+  font-size:13px;
+	list-style: none;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.menu li{
+	display: inline-block;
+	text-align: center;
+  margin: 0px 0px 0px 0px;
+  height: 0px;
+}
+
+ .item{
+  background-color: #0C3958;
+  color: white;
+}
+
+.menu li a{
+	color: black;
+	text-decoration:none;
+	display: inline-block;
+	padding: 7px 48px;
+
+}
+
+.menu li a:hover{
+	background-color: #E4E4E4;
+}
+/*Fin Menu*/
+
+/*Logo*/
+.imgLogo{
+  width: 60%;
+}
+/*Inputs*/
+.input1{
+  background-image:url("/../assets/imagenes/img1.PNG");
+  background-repeat: no-repeat;
+  float:Center;
+  background-position: center;
+}
+
+.input2{
+  background-image:url("/../assets/imagenes/img2.PNG");
+  background-repeat: no-repeat;
+  float:Center;
+  background-position: center;
+}
+
+.input3{
+  background-image:url("/../assets/imagenes/img3.PNG");
+  background-repeat: no-repeat;
+  float:Center;
+  background-position: center;
+  background-size: contain;
+}
+
+/*Fin Inputs*/
+
+
+.Contenedor{
+  width: 1000px;
+  background: gray;
+  margin: 20px auto;
+}
+
+.contenido{
+  width: 100%;
+}
+/*Cabecera*/
+.header{
+  background: #black;
+  color: #fff;
+  padding: 0px;
+  float: LEFT;
+  width: 100%;
+}
+
+.section{
+float: left;
+margin: 30px;
+
+}
+/*aside smart filters*/
+.smart{
+  border-right-style:solid;border-width: 1px;
+  border-right-color: gray;
+}
+
+.main{
+  background: #E4E4E4;
+  padding: 10px 0px;
+  width: 80%;
+  float: right;
+}
+/*aside lateral*/
+aside{
+  background: #E4E4E4;
+  color: #fff;
+  width: 16%;
+  float: right;
+}

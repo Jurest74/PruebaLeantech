@@ -1,0 +1,128 @@
+  <div class="Contenedor">
+        <div class="main">
+          <header>
+            <!-- Menu -->
+            <ul class="menu">
+              <li class="item1"><a style="color:white" class="item" href="#"><i style="color:white" class="fas fa-home fa-2x "></i><br>Home</a></li>
+              <li><a href="#"><i style="color:#0C3958" class="far fa-envelope fa-2x"></i><br>Messages</a></li>
+              <li><a href="#"><i style="color:#0C3958" class="fas fa-star fa-2x"></i><br>Wishlist</a></li>
+              <li><a href="#"><i style="color:#0C3958" class="fas fa-cog fa-2x"></i><br>Settings</a></li>
+              <li><a href="#"><i style="color:#0C3958" class="fas fa-user fa-2x"></i><br>My account</a></li>
+            </ul>
+          </header>
+          <!-- Contenido -->
+        <section  class="section">
+          <i style="color:#FF9700" class="fas fa-check-circle float-left fa-3x"></i>
+            <div class="row">
+              <div style="margin:0px 0px 0px 65%" class="col text-right">
+                <input style="width:232px;height:35px" class="form-control" type="text" placeholder="Search">
+              </div>
+            </div>
+            <br><br>
+          <i style="color:#FF9700" class="fas fa-check-circle float-left fa-3x"></i> <!-- check circle icon -->
+          <!-- Primeros Input -->
+            <div class="row">
+              <div style="margin:0px 0px 0px 5%;width:700px;" class="col input-group">
+                <input style="width:70px;height:80px;border-radius:30px 0px 0px 30px" type="text" class="form-control input1">
+                <input style="width:70px;height:80px" type="text" class="form-control input2">
+                <input style="width:70px;height:80px;border-radius:0px 30px 30px 0px" type="text" class="form-control input3">
+              </div>
+            </div>
+            <br>
+              <i style="color:#FF9700" class="fas fa-check-circle float-left fa-3x"></i> <!-- check circle icon -->
+            <div class="row">
+            <div style="margin:0px 0px 0px 5%;width:700px;" class="col input-group">
+              <input style="width:70px;height:80px;border-radius:30px 0px 0px 30px" type="text" class="form-control input1">
+              <input style="width:70px;height:80px" type="text" class="form-control input2">
+              <input style="width:70px;height:80px;border-radius:0px 30px 30px 0px" type="text" class="form-control input3">
+            </div>
+            </div>
+            <br>
+              <i style="color:#FF9700" class="fas fa-check-circle float-left fa-3x"></i> <!-- check circle icon -->
+            <div class="row">
+            <div style="margin:0px 0px 0px 5%;width:700px;" class="col input-group">
+                <input style="width:70px;height:80px;border-radius:30px 0px 0px 30px" type="text" class="form-control input1">
+                <input style="width:70px;height:80px" type="text" class="form-control input2">
+                <input style="width:70px;height:80px;border-radius:0px 30px 30px 0px" type="text" class="form-control input3">
+            </div>
+            </div>
+            <br>
+                <!-- Dynamic input -->
+            <div formArrayName="inputs" class="">
+            <div *ngFor="let phone of inputForms.controls; let i=index" style="margin:0px 0px 0px 5%;width:700px;" class="input-group">
+              <i style="color:#FF9700;margin:0px 30px 0px -34px;;" class="fas fa-check-circle  fa-3x "></i> <!-- check circle icon -->
+                <input style="width:95px;height:80px;border-radius:30px 0px 0px 30px;margin:0px 0px 0px 0px" type="text" class="form-control input1">
+                <input style="width:84px;height:80px;margin:0px -2px 0px -22px" type="text" class="form-control input2">
+                <input style="width:70px;height:80px;border-radius:0px 30px 30px 0px;margin:0px -20px 0px 0px" type="text" class="form-control input3">
+                <button style="height:35px;width:40px;margin:25px 0px 0px 20px" type="button" class="btn btn-danger " (click)="deleteinput(i)">
+              <i class="fa fa-trash-alt"></i> <!-- trash opcion icon  -->
+                </button>
+                <br><br><br><br>
+            </div>
+            </div>
+            <div class="row">
+            <div style="margin:0px 0px 0px 65%" class="col text-right">
+            <button style="width:50px;height:45px;border-radius:100px" (click)="addinput()" type="button" class="btn btn-light"><i style="color:#FF9700" class="fas fa-plus-circle fa-3x"></i></button>
+            </div>
+          </div>
+        </section>
+        </div>
+          <!-- Aside bar "Smart Filters" -->
+        <aside class="">
+          <div align="center">
+          <!-- Imagen logo -->
+            <img src="../../assets/imagenes/lean.PNG" class="imgLogo" alt="">
+          </div>
+            <div class="smart">
+            <h4 style="color:gray;text-align: center;margin:10px 10px;font-size:15px"><i style="color:gray;margin:10px 10px 0px 0px;" class="fas fa-lightbulb"></i>Smart Filters</h4>
+
+            <hr style="width:120px;margin:0px 20px 0px 20px">
+            <br>
+            <div style="margin:0px 30px 20px 40px" class="filtros">
+              <div style="float:left;margin:0px" class="">
+                <i style="color:gray" class="fas fa-certificate fa-2x"></i>
+              </div>
+            <div style="float:right;margin:0px" class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch3">
+              <label class="custom-control-label" for="customSwitch3"></label>
+            </div>
+            </div>
+            <br>
+            <br>
+            <div style="margin:0px 30px 20px 40px" class="filtros">
+              <div style="float:left;margin:0px" class="">
+                <i style="color:gray" class="fas fa-calendar-alt fa-2x"></i>
+              </div>
+            <div style="float:right;margin:0px" class="custom-control custom-switch">
+
+              <input type="checkbox" class="custom-control-input" id="customSwitch1">
+              <label class="custom-control-label" for="customSwitch1"></label>
+            </div>
+            </div>
+            <br>
+            <br>
+            <div style="margin:0px 30px 0px 40px" class="filtros">
+              <div style="float:left;margin:0px" class="">
+              <i style="color:gray" class="far fa-heart fa-2x"></i>
+              </div>
+            <div style="float:right;margin:0px" class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch4">
+              <label class="custom-control-label" for="customSwitch4"></label>
+            </div>
+            <br>
+            <br>
+            </div>
+
+            <hr style="width:120px;margin:0px 20px">
+
+            <h4 style="color:gray;text-align: center;margin:10px 0px;font-size:15px">Status</h4>
+            <div style="margin:14px 14px 19px 14px">
+            <input style="width:130px;" class="form-control" type="text" placeholder="Search">
+            <br>
+            <button style="width:130px;height:35px;" type="button" class="btn btn-light">Delivered</button>
+            </div>
+            </div>
+            <br><br>
+            <br>
+        </aside>
+        </div>
